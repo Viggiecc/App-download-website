@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+    
+  </head>
+  <style>
+
+    .navbar-brand{
+
+      font-size: 1.8em;
+
+    }
+
+    #topContainer{
+
+      /*height: 400px;*/
+      width: 100%;
+      background-size: cover;
+      background-image: url("images/background2.jpg");
+     
+
+    }
+
+    .topRow{
+
+      margin-top: 200px;
+      text-align: center;
+      /*color: #ddd6ba;*/
+      opacity: 100%;
+      color:white;
+
+    }
+
+    .topRow h1{
+
+      font-size: 300%;
+      opacity: 0.8;
+
+    }
+
+    .bold{
+
+      font-weight: bold;
+      font-size: 120%;
+    }
+
+
+
+    .marginTop{
+
+      margin-top: 20px;
+
+    }
+
+    .margin{
+
+      margin-top: 50px;
+
+    }
+
+    .center{
+
+      text-align: center;
+
+    }
+
+    .title{
+
+      margin-top: 100px;
+      font-size: 300%;
+
+    }
+
+    .box{
+
+      background-color: #d3d3d3;
+      border: 1px solid grey;
+
+    }
+
+    .left{
+
+      float: left;
+      margin-top: 10px;
+
+    }
+    .right{
+
+      float: right;
+      font-size: 110%;
+      padding-top: 2px;
+      
+    }
+
+    .marginHeader{
+
+      margin-top: 70px;
+
+    }    
+
+    .loginTitle{
+
+      font-size: 180%;
+      color:#FFBF00;
+     
+    }
+
+    .modalFont{
+
+      opacity: 0.8;
+    }
+
+    #about{
+
+      background-color: white;
+      width: 100%;
+
+    }
+
+    #download{
+
+      width: 100%;
+      background-color: #B0D1FB;
+      background-size: cover;
+      /*opacity: 0.7;*/
+    }
+
+    .footer{
+
+      padding-top: 90px;
+
+    }
+    .row h1{
+
+      opacity: 1.0;
+
+    }
+
+    #div3{
+
+      background-color: grey;
+      
+    }
+
+    .marginBottom{
+
+      margin-bottom: 30px;
+
+    }
+
+    .appstoreImage{
+
+      width: 220px;
+
+    }
+
+    #comment{
+
+      width: 100%;
+      background-color: white;
+      background-size: cover;
+      background-image: url("images/background3.jpg");
+      /*opacity: 0.7;*/
+    }
+
+    .whiteFont{
+
+      color: white;
+
+    }
+
+    
+    /*.contentDiv{
+
+      height: 800px;
+
+    }*/
+
+
+
+
+
+  </style>
+  <body data-spy="scroll" data-target=".navbar-collapse">
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <a href="#topContainer" class="navbar-brand"> My App </a>
+
+          <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse" >
+           <!--  <span class="sr-only">Toggle navigation</span> -->
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span>
+
+          </button>
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav">
+
+            <li class="active"><a href="#topContainer"> Home </a></li>
+            <li ><a href="#about"> About </a></li>
+            <li><a href="#download"> Download The App   <span class="glyphicon glyphicon-download-alt right"></span></a></li>
+            <li><a href="#comment"> Comments  <span class="glyphicon glyphicon-comment right"></span></a></li>
+
+
+          </ul>
+
+          <form class="navbar-form navbar-right ">
+
+            <div class="form-group">
+
+              <!-- <label for="loginInputEmail">Email</label> -->
+              <input input type="email" class="form-control" id="loginInputEmail" placeholder="Enter email">
+
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="loginInputPassword">Password</label> -->
+              <input input type="password" class="form-control" id="loginInputPassword" placeholder="Enter password">
+
+            </div>
+
+            
+
+              <button type="submit" class="btn btn-warning ">Log In</button>
+
+            
+            
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container " id="topContainer">
+
+      <div class="row">
+
+        <div class="col-md-6 col-md-offset-3 topRow" >
+
+          <h1>My Awesome App</h1>
+
+          <p class="lead">This is why should download the fantastic app</p>
+
+           <p>Some more information about the app. You can go into more details here if you want to.</p>
+
+          <p class="bold marginTop"> Interesed? Join Our Mailing List</p>
+
+          <form>
+
+            <div class="input-group marginTop">
+
+              <span class="input-group-addon">@</span>
+
+              <input type="email" class="form-control" placeholder="Your email"/>
+
+            </div>
+
+           <button type="submit" class="btn btn-warning btn-lg marginTop">Submit</button>
+
+          </form>
+
+
+        </div>
+        
+      </div>
+
+       
+
+    </div>
+
+
+    <div class="container " id="about">
+
+        <div  class="contentDiv">
+
+          <div class="row">
+
+            <h1 class="center title">Why This App is Awesome<h1>
+
+            <p class="lead center">Summary of the app's awesomeness</p>
+
+          </div>
+
+          <div class="row marginBottom">
+
+            <div class="col-md-4 marginHeader">
+
+              <h2><span class="glyphicon glyphicon-music iconMusic "></span> Header</h2>
+
+              <p>A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. </p>
+
+              <button class="btn btn-warning margin left" data-toggle="modal" data-target=".modal"> Sign Up!</button>
+
+             
+            </div>
+
+            <div class="col-md-4 marginHeader">
+
+            <h2><span class="glyphicon glyphicon-off iconMusic "></span> Header</h2>
+
+            <p>A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. </p>
+
+            <button class="btn btn-warning margin left" data-toggle="modal" data-target=".modal"> Sign Up!</button>
+
+              
+            </div>
+
+            <div class="col-md-4 marginHeader">
+
+            <h2><span class="glyphicon glyphicon-pencil iconMusic "></span> Header</h2>
+
+            <p>A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. Maybe a litte text. A brief description of one of the best feature for your app. </p>
+
+            <button class="btn btn-warning  left marginBottom " data-toggle="modal" data-target=".modal"> Sign Up!</button>
+
+            <div class="modal">
+
+                  <div class="modal fade" aria-hidden="true">
+
+                      <div class="modal-dialog modal-sm">
+
+                          <div class="modal-content">
+
+                              <div class="modal-header">
+
+
+
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title loginTitle center">Welcome Back</h4>
+
+                              </div>
+
+                              <div class="modal-body">
+
+                                <form >
+
+                                  <div class="form-group">
+
+                                    <label for="exampleInputEmail1" class="modalFont">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+                                  </div>
+
+                                  <div class="form-group">
+
+                                    <label for="exampleInputPassword1" class="modalFont">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                                  </div>
+
+                                  <div class="form-group">
+
+                                    <label for="exampleInputPassword1" class="modalFont">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                                  </div>
+
+                                </form>
+
+                              </div>
+      
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning ">Submit</button>
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+        
+
+  </div>
+
+  <div class="container contentDiv footer" id="download">
+
+    <div class="row">
+
+      <h1 class="center title">Download The App!</h1>
+
+      <p class="lead center">Really, why should I down load the app?</p>
+
+      <p class="center"><a href="https://itunes.apple.com/us/app/instagram/id389801252?mt=8&v0=WWW-NAUS-ITSTOP100-FREEAPPS&l=en&ign-mpt=uo%3D4"><img src="images/appstore.png" class="appstoreImage"/></a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container contentDiv footer" id="comment">
+
+    <div class="row whiteFont">
+
+      <h1 class="center title ">Do you have any comments for our website?</h1>
+
+      <p class="lead center" >Really, need your comments to improve our website.</p>
+
+      <!-- <p class="center"><a href="https://itunes.apple.com/us/app/instagram/id389801252?mt=8&v0=WWW-NAUS-ITSTOP100-FREEAPPS&l=en&ign-mpt=uo%3D4"><img src="images/appstore.png" class="appstoreImage"/></a>
+
+ -->  <form>
+
+        <div class="center form-group col-md-6 col-md-offset-3">
+
+          <textarea class="form-control textareaSize" name="comment" ></textarea>
+
+         <!--  <button type="submit" name="submit" class="marginTop btn btn-info btn-lg " ><a href="http://217.199.187.62/vigiecc.com/php/index.php#topContainer">Your Comments</a></button> -->
+
+         <a class="marginTop btn btn-info btn-lg" href="http://217.199.187.62/vigiecc.com/php/index.php#topContainer" role="button">Your Comments</a>
+
+          <!-- <button type="submit" class="btn btn-warning btn-lg marginTop">Submit</button> -->
+
+        </div>
+      </form>
+
+  </div>
+
+
+
+ <!--  <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Sign Up!
+</button>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title loginTitle center" id="myModalLabel">Welcome</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+
+    </div>
+  </div>
+</div> 
+ -->
+
+     <!--  <div class="container">
+
+          <h1>Hello, world! </h1>
+
+      </div>
+
+      <!--/*************************Add forms and tables******************************/ -->
+
+      <!-- <div class="container">
+
+        <form class="form form-group">
+
+          <div class="input-group">
+
+              
+              <input class="form-control" type="text"  / >
+              <span class=" input-group-addon">.00</span>
+
+
+          </div>
+
+          <button type="button" class="btn btn-success"> 
+
+             <span class="glyphicon glyphicon-calendar">Calendar</span>
+
+          </button>
+
+          <div class="alert alert-success alert-dismissable">
+
+
+            <button type="button"class="close" data-dismiss="alert">x</button>
+            You've done it
+
+          </div>
+
+          <ul class="list-group">
+
+            <li class="list-group-item">inbox<span class="badge">21</span></li>
+            <li class="list-group-item">sent items<span class="badge">2</span></li>
+            <li class="list-group-item ">like<span class="glyphicon glyphicon-heart right"></li>
+            <li class="list-group-item ">item 4</li>
+
+          </ul>
+
+          <div class="panel panel-info">
+
+          
+  
+              <div class="panel-heading">
+                  <h3 class="panel-title">Panel title</h3>
+              </div>
+
+              <div class="panel-body">
+                  Panel content
+              </div>
+          
+          </div>
+
+        </form>
+
+      </div>
+
+ -->
+
+    <!-- <div class="container">
+      
+      <div class="row">
+          <div class="col-md-4 box">.A</div>
+          <div class="col-md-4 box">.B</div>
+          <div class="col-md-4 box">.C</div>
+      </div>
+
+    </div> -->
+
+<!-- /*************************Add forms and tables******************************/ -->
+  
+
+    <!-- <div class="container">
+
+      <form class="form-inline">
+
+          <div class="form-group">
+
+              <label for="exampleInputName2">Name</label>
+              <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+
+          </div>
+
+          <div class="form-group">
+
+              <label for="exampleInputPassword2">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+
+          </div>
+
+          <div class="form-group">
+              
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+
+          </div>
+
+          <div class="checkbox">
+            
+              <label>
+              <input type="checkbox"> keep me logged in
+              </label>
+
+          </div>
+
+          <button type="submit" class="btn btn-warning">Submit</button>
+
+          <table class="table table-bordered">
+
+            <tr><th class="info">Name</th><th class="info">Age</th><tr>
+            <tr><td class="warning" >Joe</td><td class="warning">23</td></tr>
+            <tr><td class="warning">Jimmy</td><td class="warning">25</td></tr>
+            <tr><td class="warning">Elena</td><td class="warning">26</td></tr>
+
+          </table>
+      </form> -->
+
+
+  <!-- /*************************modal******************************/ -->
+  
+
+  <!-- <div class="container">
+
+    <button class="btn btn-success" data-toggle="modal" data-target=".modal">
+        Login Here
+    </button>
+
+    <div class="modal">
+
+      <div class="modal fade">
+
+          <div class="modal-dialog modal-sm">
+
+              <div class="modal-content">
+
+                  <div class="modal-header">
+
+
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title loginTitle">Welcome Back</h4>
+
+                  </div>
+
+                  <div class="modal-body">
+
+                    <form >
+
+                      <div class="form-group">
+
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+                      </div>
+
+                      <div class="form-group">
+
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                      </div>
+
+                    </form>
+
+                  </div>
+      
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success loginTitle">Login</button>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  -->
+<!-- /*************************scrollspy******************************/ -->
+
+<!-- <div class="container">
+
+  <div id="div1" class="contentDiv">Content</div>
+  <div id="div2" class="contentDiv">Content</div>
+  <div id="div3" class="contentDiv">Content</div>
+
+</div>
+
+   <!Query (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+
+     <script>
+
+        $("#topContainer").css("height", $(window).height());
+
+        $(".contentDiv").css("height", $(window).height());
+
+
+
+
+
+
+     </script>
+    
+  </body>
+</html> 
